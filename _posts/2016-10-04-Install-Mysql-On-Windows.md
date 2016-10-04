@@ -12,7 +12,7 @@ title: Install Mysql on Windows
 <h2>3. Start mysql</h2>
   We can use the commend of "mysqld --console" to start the mysql and check the error.
   another command is "mysqld --defaults-file="**/my.ini" --init-file=D:\Tool\006.mysql\mysql-init.txt --console"
-<h3>1. get the error of "The innodb_system data file 'ibdata1' must be writable"</h3>
+<h3>Note. get the error of "The innodb_system data file 'ibdata1' must be writable"</h3>
   1. End the process of mysqld in Windows Task Manager
   2. Delete the file of ib_logfile0 and ib_logfile1
 
