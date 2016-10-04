@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blogging Like a Hacker
+title: Design Database
 ---
 1、 Overview
 	对于数据库而言， 在日常开发中需要注意两块， 数据结构的设计和索引的优化， 这两块是影响我们最终数据库的数据结构和性能关键地方，自然也是耗费我们精力最多的地方。
