@@ -20,6 +20,6 @@ title: Install Mysql on Windows
   The command is "mysql -u root -p", then it will remind you to enter the password, just enter.
 
 <h2>5. install mysql as a service</h2>
-mysqld --install
-net start mysql
-net stop mysql
+mysqld --install</br>
+net start mysql</br>
+net stop mysql</br>
