@@ -1,25 +1,5 @@
-<!--
-<%
-var title = '';
-var icon = '';
-if (page.category){
-  title = page.category;
-  icon = 'category';
-};
-if (page.tag){
-  title = page.tag;
-  icon = 'tag';
-};
-if (page.archive){
-  icon = 'archive';
-  if (page.year) title = page.year+  (page.month ? '/' + page.month : '');
-  else title = __('archive_a');
-};
-%>
--->
-
 {% if page.layout == 'archives' %}
-{% assign title = lang.archive_a %}
+{% assign title = 'Archives' %}
 {% assign icon = 'archive' %}
 {% endif %}
 
@@ -52,14 +32,14 @@ if (page.archive){
     {% else %}
     {% assign count = count | plus: 1 %}
     {% endif %}
-        
+
     </li>
     {% endfor %}
     </ul>
  </div>
   {% endif %}
   {% if page.layout == 'categories' %}
-  
+
   <ul class="archive-list">
   <div class="archiveslist archive-float clearfix">
     {% for category in site.categories  %}
@@ -71,9 +51,9 @@ if (page.archive){
  </div>
  </ul>
  {% endif %}
- 
+
   {% if page.layout == 'tags' %}
-  
+
   <ul class="archive-list">
   <div class="archiveslist archive-float clearfix">
     {% for tag in site.tags  %}
@@ -85,7 +65,7 @@ if (page.archive){
  </div>
  </ul>
  {% endif %}
- 
+
 </div>
 <div id="main" class="archive-part clearfix">
   <div id="archive-page">
@@ -94,15 +74,5 @@ if (page.archive){
   {% assign index = true %}
   {% include _partial/article_row.html %}
   {% endfor %}
-<!--
-<% if (page.total > 1){ %>
-  <nav id="page-nav" class="clearfix archive-nav">
-    <%- paginator({
-      prev_text: '<span></span>Prev',
-      next_text: 'Next<span></span>'
-    }) %>
-  </nav>
-<% } %>
--->
   </div>
 </div>

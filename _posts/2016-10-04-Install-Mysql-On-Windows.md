@@ -9,6 +9,8 @@ title: Install Mysql on Windows
 <h2>2. Copy the ini file and rename it to my.ini</h2>
   In this step we will create the config file
 
+<!--more-->
+
 <h2>3. Start mysql</h2>
   We can use the commend of "mysqld --console" to start the mysql and check the error.
   another command is "mysqld --defaults-file="**/my.ini" --init-file=D:\Tool\006.mysql\mysql-init.txt --console"

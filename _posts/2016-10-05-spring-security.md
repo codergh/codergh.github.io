@@ -6,6 +6,8 @@ title: Spring Security
 <h2>1. Http Security</h2>
 <p>HttpSecurity is used to do the access controll for Web Application, it can helps to prevent information leaks</p>
 
+<!--more-->
+
 <h3>1.1 Authorize Requests</h3>
 <p>We can specify custom reuqirments for our URL by adding multiple children to http.authorizeRequests()</p>
 

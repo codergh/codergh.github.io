@@ -1,5 +1,4 @@
 
-
         <!DOCTYPE HTML>
 <html >
 <head>
@@ -8,10 +7,12 @@
     
     
     
-    <title></title>
+    <title>Henry's Blog</title>
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Henry">
     
 
     
@@ -22,8 +23,8 @@
     <meta property="og:type" content="website">
     
     <meta property="og:title" content="">
-    <meta property="og:url" content="/">
-    <meta property="og:site_name" content="">
+    <meta property="og:url" content="/index.html">
+    <meta property="og:site_name" content="Henry's Blog">
     <meta property="og:description" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="">
@@ -33,19 +34,25 @@
 
     
     
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
     
 
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="stylesheet" href="/css/highlight.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/highlight.css" type="text/css">
 </head>
 
   <body>
     <header>
         <div>
 		    
+			<div id="imglogo">
+				<a href="/"><img src="/assets/img/logo.png" alt="Henry's Blog" title="Henry's Blog"/></a>
+			</div>
+			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title=""></a></h1>
-				<h2 class="blog-motto"></h2>
+				<h1 class="site-name"><a href="/" title="Henry's Blog">Henry's Blog</a></h1>
+				<h2 class="blog-motto">A technology blog for myself.</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="menu">
 			</a></div>
@@ -53,12 +60,17 @@
 				<ul>
 					<ul>
 					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
 					<li>
  					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+					<form class="search" action="/search/" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="" />
-						<input type="hidden" name="q" value="site:">
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="" />
 					</form>
 					
 					</li>
@@ -67,59 +79,102 @@
 </div>
     </header>
     <div id="container">
-      <div class="posts">
+      <div id="main">
+
   
-    <article class="post">
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/30/python" title="python" itemprop="url">python</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-30 00:00:00 +0900" itemprop="datePublished">  2016-10-30</time>
+  </p>
+</header>
 
-      <h1><a href="/python/">python</a></h1>
-
-      <div class="entry">
+    <div class="article-content">
+        
         <h1>Histoy</h1>
-<h1>Using</h1>
-<h2>String</h2>
-<h3>Mutiple String</h3>
-<p>"python" * 5  -&gt; python python python python python</p>
-<h2>List</h2>
-<h3>Add more</h3>
-<p><code>
-        testList = [11, 21, 31, 41]
-        testList + [51, 61]   -&gt; [11, 21, 31, 41, 51, 61]</code></p>
-<p>testList[:2]          -&gt; [11, 21]</p>
-<p>testList[:2] = [0, 0] -&gt; [0, 0, 31, 41, 51, 61]</p>
-<p>testList[:2] = []     -&gt; [31, 41, 51, 61]</p>
-<p>&lt;/code&gt;</p>
-<h2>IF</h2>
-<p>if name is "henry":<br />
-    print("This is henry")
-</p>
-<h2>Function</h2>
-<h3>key word argument</h3>
-<p>def hello(name="henry", age="10"):<br />
-print("I am", name, "I am", age, "years old!")
-</p>
-<h3>Flexible argument</h3>
-<p>def hello(* args):<br />
-for arg in args:<br />
-pring(arg)<br />
-</p>
-<h3>Directory</h3>
-<p>directory = {"name" : "henry", "age" : "10"}<br />
-for key, value in directory:
-print("I am " + directory["name"] + ", I am " + directory["age"] + "years old")
-</p>
-<h1>Demo</h1>
-<h1>Principle</h1>
 
-      </div>
 
-      <a href="/python/" class="read-more">Read More</a>
-    </article>
+        
+
+        <p class="article-more-link">
+          
+            <a href="/2016/10/30/python#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/EhCache/">Ehcache Confirguration</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand default" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/26/EhCache" title="Ehcache Confirguration" itemprop="url">Ehcache Confirguration</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-26 00:00:00 +0900" itemprop="datePublished">  2016-10-26</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <h1>Configuration</h1>
 <h2>Expiration settings</h2>
 <ul>
@@ -127,39 +182,169 @@ print("I am " + directory["name"] + ", I am " + directory["age"] + "years old")
   <li>timeToIdleSeconds - The maximum number of seconds an element can exist in the cache without being accessed</li>
   <li>eternal - when set to "true", the expiration configuration of timetoLive and timeToIdle can take no place</li>
 </ul>
-<h2>Local sizing attributes</h2>
-<ul>
-  <li>maxEntriesLocalHeap</li>
-  <li>maxBytesLocalHeap</li>
-  <li>maxEntriesLocalDisk</li>
-  <li>maxBytesLocalDisk</li>
-</ul>
 
 
-      </div>
+        
 
-      <a href="/EhCache/" class="read-more">Read More</a>
-    </article>
+        <p class="article-more-link">
+          
+            <a href="/2016/10/26/EhCache#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/Build-JS/">Build Js for Stand-alone Using</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand default" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/13/Build-JS" title="Build Js for Stand-alone Using" itemprop="url">Build Js for Stand-alone Using</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-13 00:00:00 +0900" itemprop="datePublished">  2016-10-13</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <h2>Create the JS which can do something when load the js</h2>
 <p><code></code></p>
 
+<p>(function(win) {
+    // define the object to display the button
+    var objectA = function() {          <br />
+    };
+    objectA.prototype = {
+            display: function() {
+                alert(“You have done something”);
+            }
+    };
+    var objecta = new objectA();
+    objecta.display()
+})(window);</p>
 
-      </div>
+<p>&lt;/code&gt;</p>
 
-      <a href="/Build-JS/" class="read-more">Read More</a>
-    </article>
+
+        
+
+        <p class="article-more-link">
+          
+            <a href="/2016/10/13/Build-JS#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/Leanring_Spring/">Learning Spring</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/07/Leanring_Spring" title="Learning Spring" itemprop="url">Learning Spring</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-07 00:00:00 +0900" itemprop="datePublished">  2016-10-07</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <p>Create a scheduled task
 @Scheduled(fixedRate = 5000)
 	the scheduled annotation defines when a particular method runs. NOTE: THis example uses fixedRate, which specifies the interval
@@ -168,54 +353,302 @@ the interval betwween invocations measured from the comletion of the task. You c
 more sophisticated task scheduling</p>
 
 
-      </div>
+        
 
-      <a href="/Leanring_Spring/" class="read-more">Read More</a>
-    </article>
+        <p class="article-more-link">
+          
+            <a href="/2016/10/07/Leanring_Spring#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/spring-security/">Spring Security</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/05/spring-security" title="Spring Security" itemprop="url">Spring Security</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-05 00:00:00 +0900" itemprop="datePublished">  2016-10-05</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <h2>1. Http Security</h2>
 <p>HttpSecurity is used to do the access controll for Web Application, it can helps to prevent information leaks</p>
 
 
-      </div>
+        
 
-      <a href="/spring-security/" class="read-more">Read More</a>
-    </article>
+        <p class="article-more-link">
+          
+            <a href="/2016/10/05/spring-security#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/Install-Mysql-On-Windows/">Install Mysql on Windows</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/10/04/Install-Mysql-On-Windows" title="Install Mysql on Windows" itemprop="url">Install Mysql on Windows</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-10-04 00:00:00 +0900" itemprop="datePublished">  2016-10-04</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <h2>1. Unzip the uninstall file</h2>
 <p>In this step the data folder is not exist for mysql-5.7.11-64.</p>
 
+<h2>2. Copy the ini file and rename it to my.ini</h2>
+<p>In this step we will create the config file</p>
 
-      </div>
 
-      <a href="/Install-Mysql-On-Windows/" class="read-more">Read More</a>
-    </article>
+        
+
+        <p class="article-more-link">
+          
+            <a href="/2016/10/04/Install-Mysql-On-Windows#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
-    <article class="post">
+</div>
 
-      <h1><a href="/Database-Design/">Design Database</a></h1>
 
-      <div class="entry">
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody">
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="/2016/09/05/Database_Design" title="Design Database" itemprop="url">Design Database</a>
+  </h1>
+  <p class="article-author">By
+    <a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
+  </p>
+  <p class="article-time">
+    <time datetime="2016-09-05 00:00:00 +0900" itemprop="datePublished">  2016-09-05</time>
+  </p>
+</header>
+
+    <div class="article-content">
+        
         <p>1、 Overview
 	对于数据库而言， 在日常开发中需要注意两块， 数据结构的设计和索引的优化， 这两块是影响我们最终数据库的数据结构和性能关键地方，自然也是耗费我们精力最多的地方。
 本文主要包括数据库设计中的一般性原则和优化手段。</p>
 
 
-      </div>
+        
 
-      <a href="/Database-Design/" class="read-more">Read More</a>
-    </article>
+        <p class="article-more-link">
+          
+            <a href="/2016/09/05/Database_Design#more">Read More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
   
+  <a class="article-category-link" href="/categories/#database">database</a>
+  
+</div>
+
+
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  <a href="/tags/#Database">Database</a>
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+
+  <nav id="page-nav" class="clearfix">
+  <nav id="page-nav" class="clearfix">
+    
+    
+    <span class="page-number current">1</span>
+    
+    
+     
+  </nav>
+  </nav>
+
 </div>
 
       
@@ -227,13 +660,45 @@ more sophisticated task scheduling</p>
 <aside class="clearfix">
 
 
+  
+<div class="categorieslist">
+	<p class="asidetitle">Category</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/#database" title="database">database<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tag</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/#Database" title="Database">Database<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+
 
 </aside>
 </div>
     </div>
     <footer><div id="footer" >
 	
-	
+	<section class="info">
+		<p> Hello, I'm Henry. <br/>
+			Too simple, sometimes naive.</p>
+	</section>
+	 
 	<div class="social-font" class="clearfix">
 		
 		
@@ -245,37 +710,24 @@ more sophisticated task scheduling</p>
 		
 		
 		
+		<a href="mailto:coderguoh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
 	</div>
-	<!--
-			<%  Array.prototype.S=String.fromCharCode(2);
-			  Array.prototype.in_array=function(e){
-    			var r=new RegExp(this.S+e+this.S);
-    			return (r.test(this.S+this.join(this.S)+this.S));
-				};
-				var cc = new Array('by','by-nc','by-nc-nd','by-nc-sa','by-nd','by-sa','zero'); %>
-		<% if (cc.in_array(theme.creative_commons) ) { %>
-				<div class="cc-license">
-          <a href="http://creativecommons.org/licenses/<%= theme.creative_commons %>/4.0" class="cc-opacity" target="_blank">
-            <img src="<%- config.root %>img/cc-<%= theme.creative_commons %>.svg" alt="Creative Commons" />
-          </a>
-        </div>
-    <% } %>
-				-->
 
 		<p class="copyright">
-		Powered by <a href="http://jekyllrb.com" target="_blank" title="jekyll">jekyll</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		Powered by <a href="http://jekyllrb.com" target="_blank" title="jekyll">jekyll</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015
 		
-		<a href="" title=""></a>
+		<a href="about" target="_blank" title="Henry">Henry</a>
 		
-		
+
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
-<script src="/js/toc.js"></script>
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/js/jquery.imagesloaded.min.js"></script>
+<script src="/assets/js/gallery.js"></script>
+<script src="/assets/js/jquery.qrcode-0.12.0.min.js"></script>
+<script src="/assets/js/toc.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -340,8 +792,39 @@ $(document).ready(function(){
 
 
 
+<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/assets/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).hasClass('emoji')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
 
 <!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-67994495-1', 'auto');  
+ga('send', 'pageview');
+</script>
 
 
 
@@ -350,6 +833,11 @@ $(document).ready(function(){
 <!-- Analytics End -->
 
 <!-- Totop Begin -->
+
+	<div id="totop">
+	<a title=""><img src="/assets/img/scrollup.png"/></a>
+	</div>
+	<script src="/assets/js/totop.js"></script>
 
 <!-- Totop End -->
 
