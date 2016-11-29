@@ -1,0 +1,17 @@
+{% include _partial/head.html %}
+ <body>
+   <header>
+       {% include _partial/header.html %}
+   </header>
+   <div id="container">
+     {% assign item = page %}
+     {% assign index = false %}
+     {% assign table = true %}
+     {% include _partial/post/article.html %}
+     {% assign table = true %}
+     {% include _partial/sidebar.html %}
+   </div>
+   <footer>{% include _partial/footer.html %}</footer>
+   {% include _partial/after_footer.html %}
+ </body>
+</html>

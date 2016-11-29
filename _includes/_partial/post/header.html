@@ -1,0 +1,11 @@
+<header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="{{ site.baseurl }}{{ item.url }}" title="{{ item.title }}" itemprop="url">{{ item.title }}</a>
+  </h1>
+  <p class="article-author">By
+    <a href="{{ site.baseurl }}/about" title="{{ site.author.name }}" target="_blank" itemprop="author">{{ site.author.name }}</a>
+  </p>
+  <p class="article-time">
+    <time datetime="{{ item.date }}" itemprop="datePublished"> {{ lang.datepublished }} {{ item.date | date: "%F" }}</time>
+  </p>
+</header>
