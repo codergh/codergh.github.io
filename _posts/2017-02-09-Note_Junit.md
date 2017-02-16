@@ -14,4 +14,7 @@ Junit是一种很重要的手段来保证下一次的修改没有出现BUG，所
     StaticCalss staticClassMock = mock(StaticCalss.class);
     ReflectionTestUtils.setField(StaticCalss.class, "propertyName", staticClassMock);
 
+    * StaticCalss指的是静态类
+    * staticClassMock指的是这个静态类的实体对象
+    
 # 待续
