@@ -4,7 +4,7 @@ title: 'Spring 总结'
 tags:
   - 技巧总结
   - 日记
-category: Spring
+category: spring
 ---
 学而时习之则不亦悦乎。
 <!--more-->

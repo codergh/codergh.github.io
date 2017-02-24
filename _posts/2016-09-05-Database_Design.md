@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Database
+category: database
 title: Design Database
 tagline: by Snail
 tags:

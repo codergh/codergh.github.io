@@ -4,7 +4,7 @@ title: 'Junit 小技巧总结'
 tags:
   - 技巧总结
   - 日记
-category: Java
+category: java
 ---
 Junit是一种很重要的手段来保证下一次的修改没有出现BUG，所以在写Junit的时候会遇到很多奇奇怪怪的问题。下面就是总结一些经常遇到的问题， 然后针对这些问题提出一些解决方案。
 <!--more-->
@@ -16,5 +16,5 @@ Junit是一种很重要的手段来保证下一次的修改没有出现BUG，所
 
     * StaticCalss指的是静态类
     * staticClassMock指的是这个静态类的实体对象
-    
+
 # 待续

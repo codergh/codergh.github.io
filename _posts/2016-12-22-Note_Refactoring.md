@@ -4,7 +4,7 @@ title: 'Note when reading how to do refactor'
 tags:
   - note
   -
-category: Java
+category: java
 ---
 如果它没坏，就别动它。
 这个程序也许并没有坏掉， 但它带来了伤害，它让你的生活比较难过，因为你发现很难完成客户所需的修改。 这个时候就该重构技术粉墨登场了。
@@ -38,7 +38,7 @@ category: Java
 * 代码复用
 * 使用模板(Form template Method)
 * 利用多态取代条件逻辑(Replace conditions with polymorphism)
-* 
+*
 
 # 为何重构
 

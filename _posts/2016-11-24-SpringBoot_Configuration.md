@@ -1,11 +1,6 @@
 ---
-layout: post
-title: 'SpringBoot(Configuration)'
-tags:
-  - springboot
-  - spring
-  - java
-category: java
+layout: post title: 'SpringBoot(Configuration)' tags: - springboot - spring -
+java category: java
 ---
 Spring boot is an opinionated library that allows to create executable Srping application with a convention over configuration approach.
 

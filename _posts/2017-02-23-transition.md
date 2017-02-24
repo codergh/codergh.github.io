@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '事务入门'
+title: '事务'
 tags:
   - 事务
   -
