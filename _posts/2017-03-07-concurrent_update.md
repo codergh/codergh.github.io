@@ -37,6 +37,10 @@ Select * from A lock in share mode;
 
 ### 写独占锁 可以通过下面的方式取得  ###
 ```
+
+
+
+
 select count from A for update;
 update A set count = count1;
 ```
